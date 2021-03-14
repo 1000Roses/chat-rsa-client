@@ -18,9 +18,10 @@
       
   
     </div>
-    <div v-else class="pt-5">
+    <div v-else class="pt-5 d-flex justify-content-center">
       <basic-vue-chat
-      style="width: 25vw"
+      style="width: 100vw"
+      class ="m-auto"
       title="Chat with strangers"
       @newOwnMessage="sendMessage" 
       :new-message="message"
@@ -91,3 +92,8 @@ export default {
 }
 </script>
 
+<style>
+ .window{
+   margin:auto;
+ }
+</style>
